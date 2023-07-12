@@ -83,12 +83,12 @@ class XHSContent:
 
 
 if __name__ == "__main__":
-    urls = ['https://www.xiaohongshu.com/explore/5d8840f0000000000201c61b',
-            'https://www.xiaohongshu.com/explore/5eb4fe6500000000010061d6']
+    urls = ['https://www.xiaohongshu.com/explore/64ac08f0000000000f00c2ea',
+            'https://www.xiaohongshu.com/explore/64adc895000000001c00cf3b']
 
     content = []
     for url in urls:
-        xhs_content = XHSContent(url)
+        xhs_content = XHSContent(url, 'Authorization')
         # print(url)
         entire_data = xhs_content.getdata()
         a_list = [url, entire_data]
