@@ -50,6 +50,8 @@ Fetch article content by link
 # 中文版说明
 # xhs_spider
 使用爬虫抓取小红书信息，并通过企业微信发送给自己
+包含4个py文件，其中XhsTitle.py, XhsContent.py, wechat.py 均为独立的py文件，可以单独运行
+main.py为汇总文件，有完整的导入以上3个文件，以及在多关键字，多页面的情况下跑一个完整流程的代码
 
 # wechat.py
 使用企业微信发送消息和文件
@@ -94,7 +96,7 @@ Fetch article content by link
 # XhsContent
 通过链接抓取文章内容
 ## 建立抓取对象
-    # print(url)
+    # 输入URL和授权令牌即可
     xhs_content = XhsContent.XHSContent(url, authorization)
 ## 函数
     # 获取文章内容，包含两个字段，文章的链接和文章的内容
