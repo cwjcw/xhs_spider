@@ -60,8 +60,8 @@ Fetch article content by link
         self.AGENTID = ""  # 应用Agentid，网上教程很多，很好找
         self.TOUSER = userid  # 接收消息的userid，作为新建类的一个参数，不同的id用"|"隔开
         self.ACCESS_TOKEN_PATH = "access_token.conf"  # 存放access_token的路径
-## 建立爬虫对象
-    # 建立爬虫对象，包含1个参数
+## 建立企业微信对象
+    # 建立企业微信对象，包含1个参数，不同的id用"|"隔开
     chat = wechat.WeChat(userid)
 ## 函数
 里面有两个函数，
