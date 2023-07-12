@@ -10,7 +10,9 @@
         self.ACCESS_TOKEN_PATH = "access_token.conf"  # 存放access_token的路径
 ## 函数
 里面有两个函数，
-send_message(message),只需要填入需要发送的文本即可，仅可用于发送文本
-send_file(file),填入需要发送的路径即可
+### send_message(message)
+只需要填入需要发送的文本即可，仅可用于发送文本
+### send_file(file)
+填入需要发送的路径即可
 
 
