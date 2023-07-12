@@ -8,9 +8,9 @@ class WeChat():
         """
         配置初始信息
         """
-        self.CORPID = "ww3c1b3d905af32420"  # 企业ID
-        self.CORPSECRET = "9EuponLIySzRZGuz0Qze_87iGqa0UAgLP9wjAyuu9LQ"  # 应用Secret
-        self.AGENTID = "1000056"  # 应用Agentid
+        self.CORPID = ""  # 企业ID
+        self.CORPSECRET = ""  # 应用Secret
+        self.AGENTID = ""  # 应用Agentid
         self.TOUSER = userid  # 接收消息的userid
         self.ACCESS_TOKEN_PATH = "access_token.conf"  # 存放access_token的路径
 
