@@ -141,8 +141,12 @@ Fetch article content by link
 # XhsContent
 通过链接抓取文章内容
 ## 建立抓取对象
-       # print(url)
-       xhs_content = XhsContent.XHSContent(url, authorization)
+    # print(url)
+    xhs_content = XhsContent.XHSContent(url, authorization)
+## 函数
+    # 获取文章内容，包含两个字段，文章的链接和文章的内容
+    xhs = xhs_content.getdata()
+    
         
 
 
