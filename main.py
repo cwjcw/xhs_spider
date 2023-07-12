@@ -8,17 +8,11 @@ import wechat
 import os
 import logging
 
-# # 先写一个日期代码，
-# def today_str():
-#     today = datetime.today()
-#     return today.strftime('%y%m%d')
-
-
 # fields = ['文章链接', '作者主页', '作者昵称', '文章标题', '获赞数量', '发布时间', '是否认证ID']
 # 需要搜索的关键字
-key = ["铂爵旅拍", "薇拉旅拍", "克洛伊", "艾尔文 "]
+key = [""]
 # 授权令牌，可通过charles获取，教程网上很多
-authorization = "wxmp.eeb9954d-2ac7-4d88-beeb-2afb98566d74"
+authorization = "wxmp.XXXXX"
 # 排序方式，共3种，general：综合排序，hot_desc：热度排序,create_time_desc：发布时间排序
 sort = ["create_time_desc", 'general', 'hot_desc']
 times = 0
@@ -112,7 +106,7 @@ if __name__ == "__main__":
     source = 'xhs_db.csv'
     target = 'xhs_db.xlsx'
     duplicates(source, target)
-    sent_file('U17217', 'xhs_db.xlsx')
+    sent_file('12345', 'xhs_db.xlsx')
 
     if os.path.exists(source):
         os.remove(source)
