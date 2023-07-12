@@ -8,8 +8,8 @@ Use WeChat Work to send messages and files
         self.AGENTID = "" # Apply Agentid, there are many online tutorials, easy to find
         self.TOUSER = userid # The userid of the received message, as a parameter of the new class, different ids are separated by "|"
         self.ACCESS_TOKEN_PATH = "access_token.conf" # path to store access_token
-## Create a crawler object
-    # Create a crawler object, including 1 parameter
+## Create a wechat object
+    # Create a wechat object, including 1 parameter
     chat = wechat. WeChat(userid)
 ## function
 There are two functions in it,
