@@ -114,9 +114,9 @@ class XhsTitle:
 if __name__ == "__main__":
     # 以下3个均为class XHS的参数
     # 需要搜索的关键字
-    keyName = "铂爵旅拍"
+    keyName = "请输入要搜索的关键词"
     # 授权令牌，可通过charles获取，教程网上很多
-    authorization = "wxmp.eeb9954d-2ac7-4d88-beeb-2afb98566d74"
+    authorization = "wxmp.XXXX"
     # 排序方式，共3种，general：综合排序，hot_desc：热度排序,create_time_desc：发布时间排序
     sortedWay = "general"
     fields = ['文章链接', '作者主页', '作者昵称', '文章标题', '获赞数量', '发布时间', '是否认证ID']
@@ -129,4 +129,4 @@ if __name__ == "__main__":
     # 获取文章链接,会生成一个列表
     links = [d['文章链接'] for d in xhs_title]
     # 输出到csv，最后会生成一个文件名包含KeyName, sortedWay,以及当天日期的csv文件
-    xhs_spider.xhs_to_csv(xhs_title, fields, path=r'C:\Users\Administrator\PycharmProjects\pythonProject\test\basic.csv')
+    xhs_spider.xhs_to_csv(xhs_title, fields, path='basic.csv')
