@@ -1,3 +1,4 @@
+# 包含中英文说明，中文版说明请往下拉
 # wechat.py
 Use WeChat Work to send messages and files
 ## configuration
@@ -43,8 +44,10 @@ Information capture through WeChat's Xiaohongshu applet
 #XhsContent
 Fetch article content by link
 ## Create grab object
-  # print(url)
-                xhs_content = XhsContent. XHSContent(url, authorization)
+    # print(url)
+    xhs_content = XhsContent. XHSContent(url, authorization)
+
+# 中文版说明
 # xhs_spider
 使用爬虫抓取小红书信息，并通过企业微信发送给自己
 
