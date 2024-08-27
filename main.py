@@ -1,5 +1,4 @@
-import XhsContent
-import XhsTitle
+
 import pandas as pd
 import time
 import random
@@ -7,6 +6,8 @@ from datetime import datetime
 import wechat
 import os
 import logging
+import XhsContent
+import XhsTitle
 
 # fields = ['文章链接', '作者主页', '作者昵称', '文章标题', '获赞数量', '发布时间', '是否认证ID']
 # 需要搜索的关键字
